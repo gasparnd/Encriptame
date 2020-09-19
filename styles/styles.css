@@ -1,0 +1,180 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/*
+dark purple= #1d2d50
+background= #233142
+green= #239d60
+red= #f73859
+*/
+
+* {
+ 	margin: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #233142;
+	color: white;
+}
+
+span {
+	font-weight: bold;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+.wrapper {
+	padding: 0 5em;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	flex-direction: inherit;
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.wrapper {
+		padding: 0 1em;
+	}
+
+}
+
+/*/////////////////////
+
+		HEADER
+
+/////////////////////*/
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header a {
+	font-size: 1.2em;
+	color: white;
+	display: block;
+	margin: 1em 0;
+}
+
+/*/////////////////////
+
+		hero
+
+/////////////////////*/
+
+
+.hero {
+	padding: 2em 0;
+	margin: 0 0 3em;
+}
+
+.hero h1 {
+	font-size: calc(1em + 1vw);
+	text-align: center;
+}
+
+
+/*/////////////////////
+
+	ENCRYPT
+
+/////////////////////*/
+
+
+.encrypt-wrapper {
+	display: flex;
+	height: 100vh;
+
+}
+
+.encrypt-wrapper-title {
+	font-size: calc(1em + .5vw);
+	text-align: left;
+	font-weight: normal;
+}
+
+.encrypt {
+	padding: 1em 0 3em;
+}
+
+#textArea {
+	width: 100%;
+	height: 200px;
+	border-radius: 15px;
+	padding: .3em;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.button {
+	color: white;
+	padding: .8em;
+	border-radius: 15px;
+	border: 1px solid transparent;
+	width: 150px;
+	font-size: 1em;	
+	margin: 2em 1em 0;
+	display: inline-block;
+	text-align: -webkit-center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.button.encrypt {
+	background-color: #239d60;
+}
+
+.button.decrypt {	
+	background-color: #f73859;
+}
+
+/*//////////////////////////////////////////////////
+
+						ABOUT	
+
+//////////////////////////////////////////////////*/
+
+.about {
+	margin: 3em 0;
+	padding: 0 10em;
+} 
+
+.about h1 {
+	font-size: calc(1em + 1vw);
+	margin-bottom: 1em;
+}
+
+.about p {
+	font-size: calc(1em + .3vw);
+}
+
+@media screen and (max-width: 698px) {
+
+	.about {
+		padding: 0;
+	}
+
+}
+
+/*////////////////////////
+
+		FOOTER
+
+////////////////////////*/
+
+.footer {
+	padding: 2em 1em;
+}
+
+.footer a {
+	color: inherit;
+}
