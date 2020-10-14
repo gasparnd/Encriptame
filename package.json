@@ -1,0 +1,19 @@
+{
+  "name": "encriptame",
+  "version": "1.0.0",
+  "description": "encriptame is a website for encrypt and decrypt messages",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasparnd/Encriptame.git"
+  },
+  "author": "gasparnd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gasparnd/Encriptame/issues"
+  },
+  "homepage": "https://github.com/gasparnd/Encriptame#readme"
+}
