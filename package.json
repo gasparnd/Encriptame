@@ -2,7 +2,7 @@
   "name": "encriptame",
   "version": "1.0.0",
   "description": "encriptame is a website for encrypt and decrypt messages",
-  "main": "src/main.js",
+  "main": "src/scripts/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
