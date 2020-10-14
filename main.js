@@ -74,7 +74,7 @@ function decrypt () {
 }
 
 
-const validator = (chra, inp) => {
+const validator = (char, inp) => {
 	for (let i = 0; i<inp.length; i++) {
 		if (char === inp[i])  {
 			return true
