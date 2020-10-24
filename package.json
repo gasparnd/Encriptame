@@ -4,7 +4,9 @@
   "description": "encriptame is a website for encrypt and decrypt messages",
   "main": "src/scripts/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode development",
+    "build:production": "webpack --mode production",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/gasparnd/Encriptame/issues"
   },
-  "homepage": "https://github.com/gasparnd/Encriptame#readme"
+  "homepage": "https://github.com/gasparnd/Encriptame#readme",
+  "devDependencies": {
+    "css-loader": "2.1.1",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  }
 }
