@@ -17,15 +17,19 @@ module.exports = {
 			use: [
 				{
 					loader: MiniCssExtractPlugin.loader,
-				}
+				},
 				'css-loader'
 			]
 		}]
 	},
 	plugins: [
-		new HtmlWebpackPlugin(),
+		new HtmlWebpackPlugin({
+			inject: true,
+			template: './public/index.html',
+			filename: './index.html'
+		}),
 		new MiniCssExtractPlugin ({
-			filename: 'css/[name].css'
+			filename: 'styles/styles.css'
 		})
 	]
 }
