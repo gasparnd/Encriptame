@@ -8,19 +8,29 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/main.js'
 	},
-	devServer:{
-		open: true
+	resolve: {
+		extensions: ['.js']
 	},
 	module: {
-		rules:[{
-			test: /\.css?/,
-			use: [
-				{
-					loader: MiniCssExtractPlugin.loader,
-				},
-				'css-loader'
-			]
-		}]
+		rules:[
+			{
+				test: /\.css$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+					},
+					'css-loader'
+				]
+			},
+			{
+				test: /\.js$/,
+				use: 'babel-loader',
+				exclude: /node_modules/
+			}
+		]
+	},
+	devServer:{
+		open: true
 	},
 	plugins: [
 		new HtmlWebpackPlugin({

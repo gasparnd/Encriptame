@@ -10,13 +10,14 @@ const routes = {
 	'Message': Message
 }
 
-const router =  () => {
-	const header = null || document.getElementById('header')
+const router = async () => {
+	const header = document.getElementById('header')
 	const content = null || document.getElementById('content')
 	const footer = null || document.getElementById('footer')
-
+	
 	header.innerHTML = await Header()
 	footer.innerHTML = await Footer()
+	content.innerHTML = await Home()
 }
 
 export default router
