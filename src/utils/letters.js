@@ -93,3 +93,6 @@ const OLD_LETTER = {
 	w: 9
 }
 		
+
+export default NEW_LETTER
+export default OLD_LETTER
