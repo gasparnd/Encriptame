@@ -31,8 +31,10 @@ const router = async () => {
 	const BTN_ENCRYPT = null || document.getElementById('encryptButton')
 	const BTN_DECRYPT = null || document.getElementById('decryptButton')
 	const MessageContainer = null || document.getElementById('Message')
-	BTN_ENCRYPT.addEventListener('click', showMessage)
-	BTN_DECRYPT.addEventListener('click', showMessage)
+	if (route === '/') {
+		BTN_ENCRYPT.addEventListener('click', showMessage)
+		BTN_DECRYPT.addEventListener('click', showMessage)
+	}
 }
 
 export default router
