@@ -1,5 +1,5 @@
 
-const NEW_LETTER = {
+const LETTERS = {
 
 	a: 'r',
 	b: 'I',
@@ -94,5 +94,4 @@ const OLD_LETTER = {
 }
 		
 
-export default NEW_LETTER
-export default OLD_LETTER
+export default LETTERS
