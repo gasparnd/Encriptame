@@ -6,7 +6,7 @@ const showMessage = async (ev) => {
 	const MessageContainer = null || document.getElementById('Message-container')
 	const Message = await message(action, TEXT_AREA)
 	MessageContainer.innerHTML = `
-		<h2>Your message is:</h2>
+		<h2>Your Message is:</h2>
 		<p>${Message}</p>
 	`
 }
