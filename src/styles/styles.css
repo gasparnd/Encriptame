@@ -18,7 +18,6 @@ red= #f73859
 body {
 	background-color: #233142;
 	color: white;
-	height: 100vh
 }
 
 span {
@@ -30,7 +29,7 @@ h1 {
 }
 
 .wrapper {
-	padding: 0 5em;
+	padding: 0 5rem;
 	display: inherit;
 	justify-content: inherit;
 	align-items: inherit;
@@ -38,10 +37,15 @@ h1 {
 
 }
 
+main {
+	height: 100vh;
+	display: grid;
+}
+
 @media screen and (max-width: 600px) {
 
 	.wrapper {
-		padding: 0 1em;
+		padding: 0 1rem;
 	}
 
 }
@@ -58,10 +62,10 @@ h1 {
 }
 
 .header a {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	color: white;
 	display: block;
-	margin: 1em .5em;
+	margin: 1rem .5rem;
 }
 
 /*/////////////////////
@@ -72,12 +76,12 @@ h1 {
 
 
 .hero {
-	padding: 2em 0;
-	margin: 0 0 3em;
+	padding: 2rem 0;
+	margin: 0 0 3rem;
 }
 
 .hero h1 {
-	font-size: calc(1em + 1vw);
+	font-size: 2rem;
 	text-align: center;
 }
 
@@ -96,14 +100,14 @@ h1 {
 }
 
 .encrypt-wrapper-title {
-	font-size: calc(1em + .5vw);
+	font-size: 1rem;
 	text-align: center;
 	font-weight: normal;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
 .encrypt {
-	padding: 1em 0 3em;
+	padding: 1rem 0 3rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
@@ -113,10 +117,10 @@ h1 {
 	width: 60%;
 	height: 200px;
 	border-radius: 15px;
-	padding: 1em;
+	padding: 1rem;
 	display: flex;
 	justify-content: center;
-	font-size: 1em;
+	font-size: 1rem;
 	resize: none;
 }
 
@@ -126,12 +130,12 @@ h1 {
 
 .button {
 	color: white;
-	padding: .8em;
+	padding: .8rem;
 	border-radius: 15px;
 	width: 150px;
 	border: 2px solid transparent;
-	font-size: 1em;	
-	margin: 2em 1em 0;
+	font-size: 1rem;	
+	margin: 2rem 1rem 0;
 	display: inline-block;
 	text-align: -webkit-center;
 	text-transform: uppercase;
@@ -174,12 +178,12 @@ h1 {
 }
 
 .Message h2 {
-	font-size: calc(1em + 1vw); 
-	margin-bottom: .5em;
+	font-size: 1rem; 
+	margin-bottom: .5rem;
 }
 
 .Message p {
-	font-size: 1.2em; 
+	font-size: 1.2rem; 
 }
 
 /*//////////////////////////////////////////////////
@@ -188,19 +192,19 @@ h1 {
 
 //////////////////////////////////////////////////*/
 
-.about {
+/*.about {
 	margin: 3em 0;
 	padding: 0 10em;
 	height: 68vh;
-} 
+} */
 
 .about h1 {
-	font-size: calc(1em + 1vw);
-	margin-bottom: 1em;
+	font-size: 2rem;
+	margin-bottom: 1rem;
 }
 
 .about p {
-	font-size: calc(1em + .3vw);
+	font-size: 1.3rem;
 }
 
 @media screen and (max-width: 698px) {
@@ -218,13 +222,13 @@ h1 {
 ////////////////////////*/
 
 .Error {
-	margin: 3em 0;
-	padding: 0 10em;
+	margin: 3rem 0;
+	padding: 0 10rem;
 	height: 68vh;
 } 
 
 .Error p {
-	font-size: calc(1em + 1vw);
+	font-size: 2rem;
 	text-align: center;
 }
 
@@ -235,7 +239,9 @@ h1 {
 ////////////////////////*/
 
 .footer {
-	padding: 2em 1em;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
 }
 
 .footer a {

@@ -3,7 +3,7 @@ const resolveRoutes = route => {
 		return route // Home (/), Aboute (aboute), Message (message)
 	}
 
-	return `/${route}`
+	return `#/${route}`
 }
 
 export default resolveRoutes

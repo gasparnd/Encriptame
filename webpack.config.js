@@ -30,7 +30,7 @@ module.exports = {
 		]
 	},
 	devServer:{
-		open: true
+		/*open: true*/
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
